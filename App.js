@@ -1,8 +1,8 @@
-import Login from './pages/Login';
-import Signup from './pages/Signup';
+import MainScreen from './pages/MainScreen';
+
 
 export default function App() {
   return (
-   <Signup></Signup>
+      <MainScreen></MainScreen>
   );
 }

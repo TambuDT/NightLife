@@ -4,7 +4,8 @@ import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
 SplashScreen.preventAutoHideAsync();
 
-export default function Login() {
+
+export default function Login(navigation) {
   const [fontsLoaded, fontError] = useFonts({
     'Koulen': require('../assets/fonts/Koulen-Regular.ttf'),
     'Palanquin': require('../assets/fonts/Palanquin-Regular.ttf'),
@@ -36,7 +37,7 @@ export default function Login() {
               <Text style={styles.loginText}>Login</Text>
             </TouchableOpacity>
             <View style={{ height: 30, }}></View>
-            <TouchableOpacity onPress={() => console.log("Sign Up Pressed")}><Text style={styles.testo}>Don't have an account ? <Text style={{color:'#008170',textAlign:'center'}}>Sign Up</Text></Text></TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation}><Text style={styles.testo}>Don't have an account ? <Text style={{color:'#008170',textAlign:'center'}}>Sign Up</Text></Text></TouchableOpacity>
           </View>
         </SafeAreaView>
       </ScrollView>
