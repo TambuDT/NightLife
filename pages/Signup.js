@@ -30,7 +30,7 @@ export default function Signup() {
                         <Text style={styles.testo}>Fill all fields to create an account</Text>
                         <View style={{ height: 20, }}></View>
                         <TextInput keyboardAppearance='dark' placeholder='Name' placeholderTextColor="#999" autoCapitalize="none" autoCorrect={false} style={styles.inputText}></TextInput>
-                        <View style={{ height: 30, }}></View>
+                        <View style={{ height: 20, }}></View>
                         <TextInput keyboardAppearance='dark' placeholder='Surname' placeholderTextColor="#999" autoCapitalize="none" autoCorrect={false} style={styles.inputText}></TextInput>
                         <View style={{ height: 30, }}></View>
                         <View style={{flexDirection:'row',alignItems:'center',justifyContent:'center'}}>
@@ -40,11 +40,11 @@ export default function Signup() {
                         </View>
                         <View style={{ height: 10, }}></View>
                         <TextInput keyboardAppearance='dark' placeholder='Email' placeholderTextColor="#999" keyboardType="email-address" autoCapitalize="none" autoCorrect={false} style={styles.inputText}></TextInput>
-                        <View style={{ height: 30, }}></View>
+                        <View style={{ height: 20, }}></View>
                         <TextInput keyboardAppearance='dark' placeholder='Password' placeholderTextColor="#999" secureTextEntry={true} autoCapitalize="none" autoCorrect={false} style={styles.inputText}></TextInput>
-                        <View style={{ height: 30, }}></View>
+                        <View style={{ height: 20, }}></View>
                         <TextInput keyboardAppearance='dark' placeholder='Confirm Password' placeholderTextColor="#999" secureTextEntry={true} autoCapitalize="none" autoCorrect={false} style={styles.inputText}></TextInput>
-                        <View style={{ height: 30, }}></View>
+                        <View style={{ height: 20, }}></View>
                         <TouchableOpacity style={styles.loginButton} onPress={() => console.log("Next")}>
                             <Text style={styles.loginText}>Sign Up</Text>
                         </TouchableOpacity>
