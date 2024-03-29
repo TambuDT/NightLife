@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
   postContainer:{
     width:screenWidth*0.95,
     backgroundColor:'#fff',
-    height:400,
+    height:80,
     borderRadius:20,
 }
 });

@@ -2,10 +2,12 @@ import { useCallback } from 'react';
 import { Text, StyleSheet, SafeAreaView, TextInput, View, ScrollView, KeyboardAvoidingView, TouchableOpacity } from 'react-native';
 import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
+import { useAuth } from '../util/AuthContext';
 SplashScreen.preventAutoHideAsync();
 
 
 export default function Login(navigation) {
+  const auth = useAuth()
   const [fontsLoaded, fontError] = useFonts({
     'Koulen': require('../assets/fonts/Koulen-Regular.ttf'),
     'Palanquin': require('../assets/fonts/Palanquin-Regular.ttf'),
