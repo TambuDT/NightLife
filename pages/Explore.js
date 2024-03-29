@@ -16,7 +16,7 @@ export default function Explore() {
   const localeTest = { latitude: 45.78326928901807, longitude: 9.070379614615366 };
   const terrazzeComo = { latitude: 45.82173443826625, longitude: 9.078893339952055 };
   const [visible, setVisible] = useState(null);
-  const [zoomLevel, setZoomLevel] = useState(null);
+  const [zoomLevel, setZoomLevel] = useState(15);
   const [zoomMarker, setZoomMarker] = useState(null);
 
   const onRegionChange = (region) => {
